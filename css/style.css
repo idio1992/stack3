@@ -1,0 +1,213 @@
+/* header section  */
+.header{
+    display: grid;
+    grid-template-columns: 20% 25% 50%;
+    align-items: center;
+    justify-items: right;
+    background-color: rgb(7, 3, 1);
+    /* height: 8vh; */
+}
+.logo img{
+    width: 70%;
+}
+.icons img{
+    width: 20%;
+}
+.logo{
+    background-color: rgb(0, 0, 10);
+}
+.icons{
+    background-color: rgb(7, 1, 14);
+}
+.icons image{
+    width: 15px;
+    display: none;
+}
+.mavbar{ 
+    background-color: rgb(1, 6, 10);
+}
+li{
+    display: inline;
+}
+.mavbar li{
+    margin-left: 30px;
+}
+.menu-icon{
+    width: 40px;
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: darkorange;
+    font-size: 20px;
+    font-weight: 400;
+}
+/* header done */
+
+/* marquee section */
+.marq{
+    color: #100238;
+    margin: 50px;
+}
+/* marquee done */
+
+/* banner section */
+.banner{
+    background-image: url(/image/banner_wODW8xZ.jpeg);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(128, 12, 47);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.img{
+    color: rgb(65, 18, 1);
+}
+/* banner done */
+
+/* content section */
+.tobi{ 
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 50px;
+    justify-content: center;
+    grid-row-gap: 1px;
+}
+.mike {
+    border: 3px solid fuchsia;
+    text-align: center;
+    margin: 40px 10px ;
+    padding: 150px 120px;
+    background-clip: inherit;
+    border-radius: 10%;
+}
+
+
+/*-- content section close--*/
+
+/* footer section */
+  .footer{
+      display: grid;
+      grid-template-columns: 20% 40% 20% 20%;
+      align-items: center;
+      justify-items: center;
+      background-color: rgb(121, 4, 115);
+  }
+  .footer h1{
+      color: rgb(14, 8, 8);
+  }
+  .footer h3{
+      color: darkorange;
+      font-size: 15px;
+      font-weight: bold;
+  }
+  .footer a{
+      color: rgb(6, 6, 7);
+  }
+  .footer p{
+      color: cornsilk;
+  }
+  .footer li{
+      display: block;
+      margin-bottom: 5px;
+  }
+  .footer img{
+      width: 50%;
+  }
+  /* .total{
+      margin: 10px;
+  } */
+/* footer done*/
+/* Responsiveness on all form factor, sm device mobile first */
+@media (max-width: 500px){
+    .total{
+        margin: 0;
+    }
+    .mavbar ul{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgb(98, 78, 228);
+        width: 95%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        text-align: right;
+    }
+    .mavbar li{
+        display: block;
+        margin: 10px 50px 10px 0;
+    }
+    .mavbar a{
+        color: limegreen;
+    }
+    .menu-icon{
+        display: block;
+        cursor:pointer
+    }
+    .tobi{ 
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .mike {
+        border: 3px solid fuchsia;
+        text-align: center;
+        margin: 30px 10px;
+        padding: 120px 100px;
+        background-clip: inherit;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-items: center;
+        background-color: rgb(121, 4, 115);
+    }
+}
+/* Responsiveness on all form factor, md device mobile first */
+@media (min-width: 501px) and (max-width: 1100px){
+    .total{
+        margin: 0;
+    }
+    .mavbar ul{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgb(66, 44, 3);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        text-align: right;
+    }
+    .mavbar li{
+        display: block;
+        margin: 10px 50px 10px 0;
+    }
+    .mavbar a{
+        color: yellow;
+    }
+    .menu-icon{
+        display: block;
+        cursor:pointer
+    }
+    .tobi{ 
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .mike {
+        border: 3px solid fuchsia;
+        text-align: center;
+        margin: 20px 30px;
+        padding: 80px 80px;
+        background-clip: inherit;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-items: center;
+        background-color: rgb(121, 4, 115);
+    }
+}
